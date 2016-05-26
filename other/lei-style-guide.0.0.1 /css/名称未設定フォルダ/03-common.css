@@ -1,0 +1,314 @@
+@charset "utf-8";
+
+/*
+ * @namespace ""
+ */
+
+/*-------------------------------------------------------------------------------
+ STRUCTURE
+ -------------------------------------------------------------------------------*/
+
+/* wrapper */
+.wrapper {
+
+}
+
+/* header */
+.header {
+
+}
+
+/* nav */
+.nav {
+
+}
+
+/* main */
+.main {
+
+}
+
+/* sidebar */
+.sidebar {
+
+}
+
+/* footer */
+.footer {
+
+}
+
+/*------------------------------------------------------------------------------- 
+ MODULE BREADCRUMB
+ -------------------------------------------------------------------------------*/ 
+
+.breadcrumb {
+	margin-top: 8px;
+}
+.breadcrumb + * {
+	margin-top: 14px;
+}
+.breadcrumb > li {
+	float: left;
+}
+.breadcrumb > li + li {
+	margin-left: 10px;
+}
+.breadcrumb > li + li:before {
+	content: '>';
+	margin-right: 10px;
+}
+.breadcrumb > li,
+.breadcrumb > li a {
+	color: #b4b4b4;
+	font-size: 11px;
+}
+
+/*------------------------------------------------------------------------------- 
+ MODULE BUTTON
+ -------------------------------------------------------------------------------*/ 
+
+.btn {
+}
+.btn[type="submit"],
+.btn[type="button"],
+.btn[type="reset"] {
+	width: 100%;
+}
+.btn-inline {
+	display: inline-block;
+}
+.btn:hover {
+	opacity: 0.6;
+}
+.btn:active {
+	-webkit-box-shadow: inset 0 0 2px 1px rgba(0, 0, 0, .3);
+	-moz-box-shadow: inset 0 0 2px 1px rgba(0, 0, 0, .3);
+	box-shadow: inset 0 0 2px 1px rgba(0, 0, 0, .3);
+}
+.btn-primary {
+	background-color: #EF6D50;
+	color: #FFF !important;
+}
+.btn-secondary {
+	color: #FFF !important;
+	background-color: #E29F8A;
+}
+.btn-platinum {
+	color: #FFF !important;
+	background-color: #bfbda7;
+}
+.btn-disabled {
+	background-color: #F0F0F0;
+	color: #969696 !important;
+}
+
+/*------------------------------------------------------------------------------- 
+ MODULE ICON
+ -------------------------------------------------------------------------------*/ 
+
+.icon-star {
+
+}
+
+/*------------------------------------------------------------------------------- 
+ MODULE TABLE
+ -------------------------------------------------------------------------------*/ 
+
+.table th,
+.table td {
+
+}
+
+/*------------------------------------------------------------------------------- 
+ MODULE FORM
+ -------------------------------------------------------------------------------*/ 
+
+select,
+input[type="text"],
+input[type="search"],
+input[type="number"],
+input[type="url"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+textarea {
+	/*reset style*/
+	border-radius: 0;
+	outline: 0;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	/*original*/
+
+}
+
+/* pull down */
+select {
+}
+
+/* checkbox radio */
+input[type="checkbox"],
+input[type="radio"] {
+	display: none;
+}
+
+input[type="checkbox"] + label {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+}
+
+input[type="checkbox"] + label:before {
+	position: relative;
+	display: inline-block;
+	content:" ";
+	margin-right: 5px;
+	margin-left: 10px;
+	padding: 10px;
+	border: 1px solid #DCDCDC;
+}
+
+input[type="checkbox"]:checked + label:after {
+	position: absolute;
+	top:  2px;
+	left: 13px;
+	text-decoration: inherit;
+	text-transform: none;
+	word-wrap: normal;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 20px;
+	font-family: 'iconfont';
+	line-height: 1;
+	speak: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+input[type="checkbox"]:checked + label:after {
+	content: "\f108";
+}
+
+input[type="radio"] + label {
+	border: 1px solid #DCDCDC;
+	display: block;
+	text-align: center;
+	padding: 10px 5px;
+}
+input[type="radio"]:checked + label {
+	position: relative;
+	background-color: #DCDCDC !important;
+}
+
+/*------------------------------------------------------------------------------- 
+ MODULE ERRORS
+ -------------------------------------------------------------------------------*/ 
+
+* + .errors {
+}
+.errors + * {
+}
+.errors ul {
+}
+.errors ul > li {
+}
+
+/*------------------------------------------------------------------------------- 
+ MODULE HEADING
+ -------------------------------------------------------------------------------*/ 
+
+.heading-firstly			{ font-size: 28px; }
+.heading-firstly + *		{ margin-top: 14px; }
+.heading-secondary		{ font-size: 18px; }
+.heading-secondary + *	{ margin-top: 12px; }
+.heading-tertiary		{ font-size: 16px; }
+.heading-tertiary + *	{ margin-top: 10px; }
+
+/*------------------------------------------------------------------------------- 
+ MODULE FONT
+ -------------------------------------------------------------------------------*/ 
+
+.font-condition {
+	color: #AC6464;
+}
+
+.font-large	{ font-size: 20px; }
+.font-larger	{ font-size: 16px; }
+.font-normal	{ font-size: 14px; }
+.font-smaller{ font-size: 13px; }
+.font-small	{ font-size: 12px; }
+.font-xsmall	{ font-size: 11px; }
+.font-xxsmall{ font-size: 10px; }
+
+/*------------------------------------------------------------------------------- 
+ MODULE ANCHOR
+ -------------------------------------------------------------------------------*/
+
+.anchor-primary {
+	position: relative;
+	padding-left: 10px;
+	font-size:40px;
+}
+.anchor-primary:before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 0;
+	margin-top: -6px;
+	display: block;
+	width: 0;
+	height: 0;
+	border-color: transparent transparent transparent #333;
+	border-style: solid;
+	border-width: 6px;
+	line-height: 1;
+}
+.anchor-secondary {
+	position: relative;
+	padding-left: 0.5em;
+}
+.anchor-secondary:before {
+	content: '\203A';
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	line-height: 1;
+	margin-top: -0.5em;
+	color: #333;
+	font-size: inherit;
+}
+
+.anchor-tertiary {
+	position: relative;
+	padding-left: 0.5em;
+}
+.anchor-tertiary:before {
+	content: '\232a';
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	line-height: 1;
+	margin-top: -0.5em;
+	color: #333;
+	font-size: inherit;
+	-webkit-transform: scaleY(0.62);
+	-moz-transform: scaleY(0.62);
+	-ms-transform: scaleY(0.62);
+	-o-transform: scaleY(0.62);
+	transform: scaleY(0.62);
+}
+
+/*------------------------------------------------------------------------------- 
+ MODULE REQUIRED
+ -------------------------------------------------------------------------------*/ 
+
+.required:after {
+	content: "※必須";
+	display: inline;
+	color: #B45959;
+	font-size: 10px;
+	margin-left: 12px;
+}

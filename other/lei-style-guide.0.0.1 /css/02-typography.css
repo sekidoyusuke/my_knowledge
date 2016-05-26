@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+/*-------------------------------------------------------------------------------
+ BASE STYLE
+ -------------------------------------------------------------------------------*/
+
+/* font-family */
+html, input, select, textarea, table, th, td, li ,a {
+	font-family: 'ヒラギノ角ゴ Pro', 'Hiragino Kaku Gothic Pro', 'Yu Gothic', 'メイリオ', 'Meiryo', sans-serif;
+}
+/* font-style */
+html {
+	line-height: 1.7;
+	font-size: 13px;
+	-webkit-text-size-adjust: 100%;
+}
+/* base font color */
+html, input, select, textarea {
+	color: #464646;
+}
+/* normalize size */
+input, select, textarea {
+	font-size: 100%;
+}
+/* normalize size & weight */
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+/* normalize style & weight */
+strong, em, small {
+	font-style: normal;
+	font-weight: normal;
+}
+
+/*-------------------------------------------------------------------------------
+ ANCHORS STYLE
+ -------------------------------------------------------------------------------*/
+
+a:link		{ color: #20486a; }
+a:visited	{ color: #20486a; }
+a:hover		{ color: #2f6a9d; text-decoration: none; }
+a:active	{ color: #2f6a9d; text-decoration: none; }
+
+/*-------------------------------------------------------------------------------
+ WEB FONTS
+ -------------------------------------------------------------------------------*/
+
+/*
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Open Sans'), local('OpenSans'), url(//themes.googleusercontent.com/static/fonts/opensans/v6/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+@font-face	{
+	font-family: 'Open Sans Condensed';
+	font-style: normal;
+	font-weight: 300; src: local('Open Sans Cond Light'), local('OpenSans-CondensedLight'), url(//themes.googleusercontent.com/static/fonts/opensanscondensed/v6/gk5FxslNkTTHtojXrkp-xGAzD5WKQVN4wSyA0MYYi4rr7w4p9aSvGirXi6XmeXNA.woff) format('woff');
+}
+*/
+
+
+/* icon font */
+/*@font-face {
+	font-family: 'iconfont';
+	src:url("/fonts/sp/icon-font.eot");
+	src:url("/fonts/sp/icon-font.eot?#iefix") format("embedded-opentype"),
+		url("/fonts/sp/icon-font.woff") format("woff"),
+		url("/fonts/sp/icon-font.ttf") format("truetype"),
+		url("/fonts/sp/icon-font.svg?#webfont") format("svg");
+}*/

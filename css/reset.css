@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+/* margin padding reset */
+body, div, p,  ul, ol, li, dl, dt, dd, table, th ,td, img, figure,
+h1, h2, h3 ,h4 ,h5, h6, form, select {
+	margin: 0;
+	padding: 0;
+}
+
+/* remove list point mark */
+ul,
+ol		{ list-style: none; }
+
+/* remove border & off descender */
+img		{ border: 0; vertical-align: middle; }
+
+/* remove descender */
+svg,
+input,
+select,
+textarea,
+label	{ vertical-align: middle; }
+
+/* set collapse */
+table	{ border-collapse: collapse; }
+
+/* off bold */
+h1, h2, h3 ,h4 ,h5, h6, th, em, strong { font-weight: normal; }
+
+/* break word for all elements */
+*,
+*:before,
+*:after {
+	word-break: break-all;
+}
+pre	 {
+	white-space: pre-wrap;
+}
+
+/* [IE8-] New Tag from HTML5 */
+main, article, aside, figcaption, figure,
+footer, header, nav, section, details, summary {
+	display: block;
+}
+
+/* for height 100% */
+html,
+body {
+	min-height: 100%;
+}
+
+/* [if it need] remove default form style */
+select,
+input[type="text"],
+input[type="search"],
+input[type="number"],
+input[type="url"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+textarea {
+	border-radius: 0;
+	outline: 0;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
